@@ -23,7 +23,6 @@ public class UsoEmpleados {
 		System.out.println(Juan.getTareas());
 		
 		contexto.close();
-		sut
 	}
 
 }
