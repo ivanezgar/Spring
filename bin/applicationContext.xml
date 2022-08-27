@@ -12,9 +12,11 @@
 <bean id="miInforme" class="es.pruebas.IoC.Informe"></bean>
 
 
-<bean id="miEmpleado" class="es.pruebas.IoC.JefeEmpleado">
+<bean id="miEmpleado" class="es.pruebas.IoC.DirectorEmpleado">
 
 	<constructor-arg ref="miInforme"></constructor-arg>
+	<property name="email" value="equipo_directivo@pildorasinformaticas.es"></property>
+	<property name="nombreEmpresa" value="Pildoras Informaticas"></property>
 
 
 </bean>
@@ -22,8 +24,13 @@
 <bean id="miSecretarioEmpleado" class="es.pruebas.IoC.SecretarioEmpleado">
 	
 	<property name="informeNuevo" ref="miInforme"></property>
-
+	<property name="email" value="secretaria@pildorasinformaticas.es"></property>
+	<property name="nombreEmpresa" value="Pildoras Informaticas"></property>
+	
 </bean>
+
+
+
 
 
 </beans>

@@ -7,11 +7,32 @@ public class DirectorEmpleado implements Empleados {
 
 	private CreacionInformes informeNuevo;
 	
+	private String email;
+	
+	private String nombreEmpresa;
+	
 	
 	//Creación de constructor que inyecta la dependencia
 	public DirectorEmpleado(CreacionInformes informeNuevo) {
 		
 		this.informeNuevo = informeNuevo;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setNombreEmpresa(String nombreEmpresa) {
+		this.nombreEmpresa = nombreEmpresa;
+	}
+
+
+	public String getNombreEmpresa() {
+		return nombreEmpresa;
 	}
 	
 	@Override
