@@ -15,6 +15,8 @@ public class UsoEmpleados {
 			System.out.println(Empleado1.getTareas());
 			
 			System.out.println("LACACA");
+			
+			System.out.println("LACACA2");
 	}
 
 }
