@@ -11,10 +11,17 @@
 <!-- creacion de la dependencia -->
 <bean id="miInforme" class="es.pruebas.IoC.Informe"></bean>
 
-<!-- creacion de inversion of control -->
-<bean id="miEmpleado" class="es.pruebas.IoC.JefeEmpleado">
-<constructor-arg ref="miInforme"></constructor-arg>
 
+<bean id="miEmpleado" class="es.pruebas.IoC.JefeEmpleado">
+
+	<constructor-arg ref="miInforme"></constructor-arg>
+
+
+</bean>
+
+<bean id="miSecretarioEmpleado" class="es.pruebas.IoC.SecretarioEmpleado">
+	
+	<property name="informeNuevo" ref="miInforme"></property>
 
 </bean>
 
