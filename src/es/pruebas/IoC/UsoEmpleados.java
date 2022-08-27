@@ -13,6 +13,8 @@ public class UsoEmpleados {
 		//Uso de los objetos creados
 			
 			System.out.println(Empleado1.getTareas());
+			
+			System.out.println("LACACA");
 	}
 
 }
