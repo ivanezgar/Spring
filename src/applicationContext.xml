@@ -7,6 +7,8 @@
     http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
     http://www.springframework.org/schema/context 
     http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+<context:property-placeholder location="classpath:datosEmpresa.propiedades"/>
     
 <!-- creacion de la dependencia -->
 <bean id="miInforme" class="es.pruebas.IoC.Informe"></bean>
@@ -15,8 +17,10 @@
 <bean id="miEmpleado" class="es.pruebas.IoC.DirectorEmpleado">
 
 	<constructor-arg ref="miInforme"></constructor-arg>
-	<property name="email" value="equipo_directivo@pildorasinformaticas.es"></property>
-	<property name="nombreEmpresa" value="Pildoras Informaticas"></property>
+	
+	<property name="email" value="${email}"></property>
+	
+	<property name="nombreEmpresa" value="${nombreEmpresa}"></property>
 
 
 </bean>
