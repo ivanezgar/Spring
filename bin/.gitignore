@@ -1,3 +1,5 @@
-/es/
-/datosEmpresa.propiedades
+/applicationContext.xml
 /applicationContext2.xml
+/datosEmpresa.propiedades
+/es/
+/applicationContext3.xml

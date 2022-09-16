@@ -11,8 +11,23 @@ public class DirectorEmpleado implements Empleados {
 	
 	private String nombreEmpresa;
 	
+	//metodo init. Ejecutar tareas antes de que el bean estÃ© disponible
 	
-	//Creación de constructor que inyecta la dependencia
+	public void metodoInicial() {
+		
+		System.out.println("Dentro del metodo init. Aqui irian las tareas a ejecutar antes de que el bean este listo");
+		
+		
+	}
+	
+	// metodo destroy .Ejecutar tareas despues de que el bean haya sido utilizado
+	public void metodoFinal() {
+		
+		System.out.println("Dentro del metodo destroy. Aqui irian las tareas a ejecutar despues de que el bean sea usado");
+		
+		
+	}
+	//Creaciï¿½n de constructor que inyecta la dependencia
 	public DirectorEmpleado(CreacionInformes informeNuevo) {
 		
 		this.informeNuevo = informeNuevo;
